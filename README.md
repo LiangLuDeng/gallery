@@ -4,7 +4,7 @@
 
 Install global dependencies
 ```
-npm i yarn tyarn -g
+$ npm install yarn tyarn -g
 ```
 
 Install dependencies,
