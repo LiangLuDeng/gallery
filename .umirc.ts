@@ -11,7 +11,7 @@ export default defineConfig({
       routes: [
         {
           path: '/',
-          component: '@/pages/index',
+          component: '@/pages/home/index',
         },
       ],
     },

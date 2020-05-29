@@ -1,0 +1,23 @@
+@import '../../styles/vars.less';
+
+.container {
+  flex: auto;
+  display: flex;
+  padding: @gutter;
+
+  .left {
+    flex: 1 1 auto;
+    display: flex;
+    padding-right: @gutter;
+
+    &-content {
+      background: #539755;
+      flex: auto;
+    }
+  }
+
+  .right {
+    flex: 0 0 390px;
+    background: #532c0b;
+  }
+}
