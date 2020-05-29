@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styles from './index.less';
 
-export default (props: any) => {
+export interface PartitionProps {
+  leftContent?: ReactNode;
+  rightContent: ReactNode;
+}
+
+const Partition: React.FunctionComponent<PartitionProps> = props => {
   const { leftContent, rightContent } = props;
-  debugger;
 
   return (
     <div className={styles.container}>
@@ -14,3 +18,5 @@ export default (props: any) => {
     </div>
   );
 };
+
+export default Partition;
