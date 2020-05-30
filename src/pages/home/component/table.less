@@ -1,0 +1,32 @@
+.tableCompenent {
+  :global {
+    table {
+      border-collapse: collapse;
+      text-align: center;
+      table-layout: fixed;
+      width: 100%;
+    }
+    table td,
+    table th {
+      // border: 1px solid #cad9ea;
+      color: #fff;
+      padding: 12px;
+      font-size: 16px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      cursor: pointer;
+    }
+    table thead th {
+      background: rgba(12, 63, 129, 1);
+      font-size: 18px;
+      color: #87fcfe;
+    }
+    table tr:nth-child(odd) {
+      background: rgba(16, 51, 127, 0.2);
+    }
+    table tr:nth-child(even) {
+      background: rgba(16, 35, 86, 1);
+    }
+  }
+}
