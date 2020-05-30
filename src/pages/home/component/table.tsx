@@ -21,7 +21,11 @@ const Table = ({ column, dataSource }: IProps) => {
         <thead>
           <tr>
             {tableColumn.map(item => {
-              return <th key={item?.key}>{item?.title}</th>;
+              return (
+                <th key={item?.key} title={item?.title}>
+                  {item?.title}
+                </th>
+              );
             })}
           </tr>
         </thead>
