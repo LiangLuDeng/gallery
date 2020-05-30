@@ -1,12 +1,12 @@
-import React, { ReactNode } from 'react';
+import React, { ReactNode, FC } from 'react';
 import styles from './index.less';
 
 export interface PartitionProps {
-  leftContent?: ReactNode;
+  leftContent: ReactNode;
   rightContent: ReactNode;
 }
 
-const Partition: React.FunctionComponent<PartitionProps> = props => {
+const Partition: FC<PartitionProps> = props => {
   const { leftContent, rightContent } = props;
 
   return (
