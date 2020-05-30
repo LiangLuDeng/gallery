@@ -7,7 +7,9 @@ const Panel: FC = props => {
   return (
     <div className={styles.container}>
       <div className={styles.top} />
-      <div className={styles.body}>{children}</div>
+      <div className={styles.body}>
+        <div className={styles.content}>{children}</div>
+      </div>
       <div className={styles.bottom} />
     </div>
   );

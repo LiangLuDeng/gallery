@@ -1,9 +1,10 @@
 import React from 'react';
 import Table from './component/table';
-import styles from './RightContent.less';
+import KaiPiaoChart from './charts/kaipiao';
+import styles from './rightContent.less';
 
-const RightContent: React.FunctionComponent = () => {
-  const column = [
+const RightContent: React.FC = () => {
+  /*const column = [
     {
       title: '排名',
       dataIndex: 'pm',
@@ -69,12 +70,19 @@ const RightContent: React.FunctionComponent = () => {
         },
       ],
     });
-  });
+  });*/
 
   return (
-    <div>
-      this is left content
-      <Table dataSource={dealData} column={column} />
+    <div className={styles.container}>
+      <div className={styles.top}>
+        <KaiPiaoChart />
+      </div>
+
+      <div className={styles.bottom}>
+        <KaiPiaoChart />
+      </div>
+
+      {/*<Table dataSource={dealData} column={column} />*/}
     </div>
   );
 };
