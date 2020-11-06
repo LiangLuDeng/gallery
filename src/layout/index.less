@@ -1,16 +1,52 @@
 .container {
-  background: #061d3e;
-  color: #fff;
+  background: #efefef;
+  // color: palevioletred;
   display: flex;
   flex-direction: column;
 
   .header {
     flex: 0 0 86px;
-    background: cadetblue;
+    // background: cadetblue;
+    // background: url('../assets/panelHeader.png') no-repeat;
+    // background-size: 100% 100%;
+    display: flex;
+    padding-top: 28px;
   }
 
   .content {
     flex: 1 1 auto;
     display: flex;
+  }
+
+  .footer {
+    color: green;
+  }
+
+  .year_button {
+    position: absolute;
+    margin: 8px;
+    right: 20px;
+  }
+
+  .right_tools {
+    display: flex;
+    color: #177ddc;
+
+    img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .button {
+      margin: 8px;
+      padding: 6px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      // line-height: 40px;
+      // vertical-align: middle;
+      background: url(../assets/buttonBg.png) no-repeat;
+      background-size: contain;
+    }
   }
 }
