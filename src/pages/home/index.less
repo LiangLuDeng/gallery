@@ -21,6 +21,12 @@
       cursor: pointer;
       transition: 0.2s;
 
+      & > img {
+        border: 1px dashed #539755;
+        border-radius: 50%;
+        // padding: 4px;
+        transition: 0.2s;
+      }
       & > span {
         float: right;
         font-size: 16px;
@@ -34,6 +40,10 @@
         padding-bottom: 18px;
         border-bottom: 5px solid #539755;
         transition: 0.2s;
+        & > img {
+          transition: 0.2s;
+          transform: scale(1.3);
+        }
       }
     }
   }

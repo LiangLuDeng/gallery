@@ -18,4 +18,77 @@ export const allPart: menuItem[] = [
     title: '堆叠类蜂巢',
     path: '高复用的图形构造',
   },
+  {
+    title: '堆叠ss类蜂巢',
+    path: 'ssss',
+  },
+  {
+    title: '堆叠ss类蜂巢',
+    path: 'ssss',
+  },
+  {
+    title: '323',
+    path: 'ssss',
+  },
+  {
+    title: 'dfsf',
+    path: 'ssss',
+  },
+  {
+    title: 'nhgj',
+    path: 'ssss',
+  },
+  {
+    title: 'sdfdsf',
+    path: 'ssss',
+  },
+  {
+    title: '323',
+    path: 'ssss',
+  },
+  {
+    title: 'dfsf',
+    path: 'ssss',
+  },
+  {
+    title: 'nhgj',
+    path: 'ssss',
+  },
+  {
+    title: 'sdfdsf',
+    path: 'ssss',
+  },
+  {
+    title: '323',
+    path: 'ssss',
+  },
+  {
+    title: 'dfsf',
+    path: 'ssss',
+  },
+  {
+    title: 'nhgj',
+    path: 'ssss',
+  },
+  {
+    title: 'sdfdsf',
+    path: 'ssss',
+  },
+  {
+    title: '323',
+    path: 'ssss',
+  },
+  {
+    title: 'dfsf',
+    path: 'ssss',
+  },
+  {
+    title: 'nhgj',
+    path: 'ssss',
+  },
+  {
+    title: 'sdfdsf',
+    path: 'ssss',
+  },
+
 ];

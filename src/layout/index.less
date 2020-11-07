@@ -1,25 +1,47 @@
 .container {
   background: #efefef;
+  // background: url('../assets/images/borad2.svg') ;
+  // background-size: 15% 12%;
   // color: palevioletred;
-  display: flex;
-  flex-direction: column;
-
+  // display: flex;
+  // flex-direction: column;
+  overflow-y: auto;
   .header {
     flex: 0 0 86px;
-    // background: cadetblue;
-    // background: url('../assets/panelHeader.png') no-repeat;
-    // background-size: 100% 100%;
     display: flex;
-    padding-top: 28px;
+    .avatar {
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      margin: 18px;
+      width: 100px;
+      height: 100px;
+      background: url('../assets/logo/yibo.jpg') no-repeat;
+      background-size: 100% 100%;
+      border: 2px dashed #539755;
+      color:#539755;
+      font-size: 21px;
+      font-weight: 700;
+      opacity: 0.9;
+      border-radius: 50%;
+    }
   }
 
   .content {
-    flex: 1 1 auto;
+    // flex: 1 1 auto;
     display: flex;
+    // overflow-y: auto;
+    margin: 20px auto;
   }
 
   .footer {
     color: green;
+    position: absolute;
+    left: 0px;
+    margin: 10px;
+    bottom: 0px;
+    font-size: 22px;
+    font-weight: 600;
   }
 
   .year_button {
