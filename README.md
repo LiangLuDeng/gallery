@@ -7,22 +7,22 @@
  * @FilePath: \gallery\README.md
 -->
 # umi project
-![最酷的板仔YIBO](./src/assets/images/board.svg)
+![最酷的板仔YIBO](https://wx4.sinaimg.cn/mw690/0068exIJly1gkgh9mqqxhj30j20jawj5.jpg)
 ## Getting Started
 
 Install global dependencies
 ```
-$ npm install yarn tyarn -g
+$ npm install
 ```
 
 Install dependencies,
 
 ```bash
-$ tyarn
+$ npm
 ```
 
 Start the dev server,
 
 ```bash
-$ tyarn start
+$ npm start
 ```
