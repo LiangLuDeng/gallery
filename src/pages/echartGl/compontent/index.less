@@ -1,0 +1,315 @@
+.rank {
+  overflow-y: auto;
+  width: 400px;
+  // margin-top: 25px;
+  position: absolute;
+  right: 0px;
+  height: 92%;
+  background: rgba(51, 74, 107, 0.1);
+
+  .total {
+    // border: 1px solid;
+    padding: 10px 15px;
+    margin-top: 15px;
+
+    .title {
+      font-size: 18px;
+      color: #ffffff;
+      margin: 10px 0px;
+
+      >span {
+        position: absolute;
+        right: 10px;
+        font-size: 14px;
+
+      }
+    }
+
+    .numBlock {
+      display: flex;
+      flex-wrap: nowrap;
+
+      .num {
+        flex-grow: 1;
+        border: 1px solid rgba(57, 110, 156, .5);
+        color: orange;
+        // padding: 10px;
+        font-weight: 800;
+        font-size: 30px;
+        text-align: center;
+        margin: 0px 8px;
+      }
+    }
+  }
+
+  .listGroup {
+    // border: 1px solid;
+    margin-top: 20px;
+
+    .listOl {
+      padding: 5px 15px;
+
+      .listTitle {
+        display: flex;
+        justify-content: space-between;
+        color: #ffffff;
+
+        .numAndIcon {
+          font-weight: 600;
+        }
+      }
+
+      .progress {
+        margin: 8px 0px;
+      }
+    }
+  }
+}
+
+.commonTitle {
+  padding: 10px;
+  text-align: center;
+  background-color: rgba(47, 83, 120, .5);
+  color: rgba(80, 210, 233, 1);
+  font-size: 20px;
+}
+
+.header {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+
+  &>div:nth-child(1) {
+    // border: 1px solid pink;
+    width: 300px;
+    margin: 20px;
+    margin-right: 400px;
+  }
+
+  &>div:nth-child(2) {
+    width: 400px;
+    // border: 1px solid pink;
+  }
+}
+
+@keyframes mymove
+
+/* 对应animation-name，里面为执行的动画*/
+  {
+  from {
+    left: 200px;
+  }
+
+  /*执行动画的初始位置*/
+  to {
+    left: 0px;
+  }
+
+  /*动画结束位置*/
+  0% {
+    opacity: 0.1;
+    /*初始状态 透明度为10%*/
+  }
+
+  50% {
+    opacity: 0.5;
+    /*中间状态 透明度为50%*/
+  }
+
+  100% {
+    opacity: 1;
+    /*结尾状态 不透明*/
+  }
+}
+
+@keyframes mymove
+
+/* 对应animation-name，里面为执行的动画*/
+  {
+  from {
+    top: 0px;
+
+  }
+
+  /*执行动画的初始位置*/
+  to {
+    top: 140px;
+  }
+
+  /*动画结束位置*/
+  0% {
+    opacity: 0.1;
+    /*初始状态 透明度为10%*/
+  }
+
+  50% {
+    opacity: 0.5;
+    /*中间状态 透明度为50%*/
+  }
+
+  100% {
+    opacity: 1;
+    /*结尾状态 不透明*/
+  }
+}
+
+.tooltipBox {
+  position: absolute;
+  z-index: 9;
+  top: 140px;
+  left: 530px;
+  padding: 10px;
+  // background: url('../../../assets/monitorImg/tooltip.png') no-repeat;
+  background-size: 100% 100%;
+  animation-name: mymove;
+  animation-duration: 2s;
+  /* 5s表示执行动画的时间，0或不写则无动画效果 */
+
+  /* 兼容调试如果animation-name执行，那么-wekit-animation-name则不执行 */
+  -webkit-animation-name: mymove;
+  -webkit-animation-duration: 2s;
+
+  /* 5s表示执行动画的时间，0或不写则无动画效果 */
+  &>div {
+    padding: 4px 8px;
+    color: #ffffff;
+  }
+
+  &>div:nth-child(5) {
+    color: #FFFF8A;
+    cursor: pointer;
+  }
+}
+
+.tooltipBoxNone {
+  position: absolute;
+  z-index: 9;
+  top: 0px;
+  left: 530px;
+  padding: 10px;
+  // background: url('../../../assets/monitorImg/tooltip.png') no-repeat;
+  background-size: 100% 100%;
+  opacity: 0;
+  display: none;
+
+  /* 5s表示执行动画的时间，0或不写则无动画效果 */
+  &>div {
+    padding: 4px 8px;
+    color: #ffffff;
+  }
+
+  &>div:nth-child(5) {
+    color: #FFFF8A;
+  }
+}
+
+.searchInput {
+  display: flex;
+
+  :global {
+    .ant-btn {
+      background-color: rgba(57, 110, 156, .5) !important;
+      color: rgba(71, 162, 195, 1) !important;
+      border: 1px solid rgba(57, 110, 156, .5) !important;
+
+      >span {
+        color: rgba(71, 162, 195, 1) !important;
+      }
+    }
+
+    .ant-btn:hover {
+      background-color: rgba(57, 110, 156, .7) !important;
+      color: rgba(71, 162, 195, 1) !important;
+    }
+
+    .ant-select-dropdown {
+      background-color: rgba(57, 110, 156, .3) !important;
+    }
+
+    .ant-select-selector {
+      background-color: rgba(0, 0, 0, 0) !important;
+      border: 1px solid rgba(57, 110, 156, .5) !important;
+      border-right: none;
+    }
+
+    .ant-select {
+      color: rgba(71, 162, 195, 1) !important;
+    }
+
+    .ant-select-item-option-active:not(.ant-select-item-option-disabled) {
+      background-color: #2e5d7387 !important;
+    }
+
+    .ant-select-item {
+      color: rgb(247, 244, 244) !important;
+    }
+
+    .ant-select-dropdown {
+      background-color: rgba(57, 110, 156, .3) !important;
+    }
+
+  }
+}
+
+.numWrap {
+
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 370px;
+  // border: 1px solid pink;
+  text-align: center;
+  z-index: 99;
+
+  .numCard {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+    width: 43px;
+    height: 52px;
+    border: 1px solid rgba(57, 110, 156, 0.5);
+    font-size: 70px;
+    color: #F77A28;
+    text-align: center;
+    // background-size: cover;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    overflow: hidden;
+    font-family: 'NumberFont';
+
+    &>span {
+      position: absolute;
+      top: 3px;
+      left: 50%;
+      font-size: 45px;
+      transform: translate(-50%, 0);
+      transition: transform 1s ease-in-out;
+      letter-spacing: 10px;
+    }
+  }
+
+  .titleWrap {
+    margin-top: -4px;
+    font-size: 24px;
+    color: #85fcff;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+    .title {
+      position: relative;
+      width: 560px;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      margin: 0 auto;
+      border-bottom: 1px solid #2E5380;
+      border-left: 1px solid #2E5380;
+      border-right: 1px solid #2E5380;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+
+      img {
+        margin-right: 25px;
+      }
+    }
+  }
+}

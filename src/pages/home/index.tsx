@@ -1,5 +1,6 @@
 import React from 'react';
 import Partition from '@/components/Partition';
+import { useHistory } from 'react-router-dom'
 import { allPart } from './partInfo';
 import styles from './index.less';
 // @ts-ignore
@@ -10,7 +11,11 @@ const requireAll = requireContext => requireContext.keys().map(requireContext)
 const iconArray = requireAll(modulesFiles);
 
 export default () => {
-  console.log(allPart, 'allpart');
+  const history = useHistory()
+  // console.log(allPart, 'allpart');
+  const goToPath = (path:string) => {
+    history.push(path)
+  }
   return (
     // <Partition leftContent={<LeftContent />} rightContent={<RightContent />} />
     <div className={styles.container}>
@@ -20,7 +25,7 @@ export default () => {
           //@ts-ignore
           // const iconIndex = parseInt(Math.random()*(iconArray.length+1),10) - 1;
           return (
-            <div className={styles.menu_item}>
+            <div className={styles.menu_item} onClick={() => goToPath(it?.path)}>
               <img style={{ width:50, height:50, marginRight:10 }} src={iconArray[iconIndex]} alt="s"/>
               {it?.title}
               <span>

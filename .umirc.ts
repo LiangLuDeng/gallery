@@ -13,7 +13,12 @@ export default defineConfig({
           path: '/',
           component: '@/pages/home/index',
         },
+        {
+          path: '/map',
+          component: '@/pages/echartGl/index',
+        }
       ],
     },
+    
   ],
 });

@@ -11,84 +11,12 @@ import { menuItem } from './interface';
 export const allPart: menuItem[] = [
   {
     title: 'echart-gl (3D地图)',
-    path: '',
-    desc: '某经纬度区域定位问题',
+    path: '/map',
+    desc: '经纬度精细切割便于定位区域',
   },
   {
     title: '堆叠类蜂巢',
-    path: '高复用的图形构造',
+    path: '/map',
+    desc: '高复用的图形构造',
   },
-  {
-    title: '堆叠ss类蜂巢',
-    path: 'ssss',
-  },
-  {
-    title: '堆叠ss类蜂巢',
-    path: 'ssss',
-  },
-  {
-    title: '323',
-    path: 'ssss',
-  },
-  {
-    title: 'dfsf',
-    path: 'ssss',
-  },
-  {
-    title: 'nhgj',
-    path: 'ssss',
-  },
-  {
-    title: 'sdfdsf',
-    path: 'ssss',
-  },
-  {
-    title: '323',
-    path: 'ssss',
-  },
-  {
-    title: 'dfsf',
-    path: 'ssss',
-  },
-  {
-    title: 'nhgj',
-    path: 'ssss',
-  },
-  {
-    title: 'sdfdsf',
-    path: 'ssss',
-  },
-  {
-    title: '323',
-    path: 'ssss',
-  },
-  {
-    title: 'dfsf',
-    path: 'ssss',
-  },
-  {
-    title: 'nhgj',
-    path: 'ssss',
-  },
-  {
-    title: 'sdfdsf',
-    path: 'ssss',
-  },
-  {
-    title: '323',
-    path: 'ssss',
-  },
-  {
-    title: 'dfsf',
-    path: 'ssss',
-  },
-  {
-    title: 'nhgj',
-    path: 'ssss',
-  },
-  {
-    title: 'sdfdsf',
-    path: 'ssss',
-  },
-
 ];
